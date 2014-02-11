@@ -21,7 +21,7 @@ begin
 fixnum = 5
 string = "Babar"
 boolean = false
-hash = {superhero: "Superman", superwomen: "Cat's Eyes"}
+hash = {superhero: "Superman", superwoman: "Cat's Eyes"}
   
   
 end
@@ -33,6 +33,16 @@ begin
 
   a = 1
   b = 2
+  
+3.1 : 
+x = a
+y = b
+a = y
+b = y
+
+3.2
+a,b = b,a
+
 
 end
 
@@ -40,6 +50,7 @@ end
 #4. A quoi sert une méthode ?
 =begin
 
+Une méthode conserve un fonctionnement précis pour une réutilisation ultérieure.
 
 =end
 
@@ -48,6 +59,23 @@ end
 #.. une des 3 ne doit prendre aucun argument
 #.. une des trois doit prendre un argument facultatif
 #.. chacune doit renvoyer un type de données différent (String, Hash, Fixnum )
+
+def hi(name)
+  "Hi #{name.capitalize!}!"
+end
+
+def addition
+  4 + 4
+end
+
+def users_list(names, opt={})
+  names.each {|name| name.capitalize!}
+end
+
+puts hi("boris")
+puts addition
+puts users_list(["steve jobs", "maria callas", "montserrat caballé"])
+
 begin
 
 
