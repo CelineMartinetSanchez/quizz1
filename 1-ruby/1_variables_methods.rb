@@ -3,6 +3,7 @@
 #0. A quoi sert une variable ?
 =begin
 
+A conserver une donnée pour la réutiliser plus tard.
 
 =end
 
@@ -10,13 +11,17 @@
 name = "Poney"
 =begin
 
+On enregistre une donnée dans une variable.
 
 =end
 
 #2. Built-in classes
 # Définissez des variables stockant tous les types de données standard que vous connaissez.
 begin
-  
+fixnum = 5
+string = "Babar"
+boolean = false
+hash = {superhero: "Superman", superwomen: "Cat's Eyes"}
   
   
 end
